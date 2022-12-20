@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,300&family=Tajawal&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    background-color: #3B3B98;
+}
+
+.container{
+    background-color: #23235B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 50vh;
+    width: 30%;
+    height: 50%;  
+    gap: 10px;
+    padding: 15px;
+    animation: bounceInDown 1.2s;
+}
+
+@media (max-width:1147px) {
+    .container{
+        width: 100%;
+        
+    }
+    
+}
+
+   @keyframes bounceInDown {
+            0% {
+               opacity: 0;
+               transform: translateY(-2000px);
+            }
+            60% {
+               opacity: 1;
+               transform: translateY(30px);
+            }
+            80% {
+               transform: translateY(-10px);
+            }
+            100% {
+               transform: translateY(0);
+            }
+         }
+.container h1{
+    font-family: 'Roboto Mono', monospace;
+    color: aliceblue;
+
+}
+.result{
+   padding: 10px;
+   background-color: rgb(54, 48, 165);
+   display: flex;
+   justify-content: space-between;   
+   width: 90%;
+}
+.result .display{
+    color: aliceblue;
+    font-size: 25px;
+    font-family: 'Roboto Mono', monospace;
+}
+.result .copy{
+    background-color: #3B3B98;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.result .copy:hover{
+    background-color: rgba(94, 94, 173, 0.973);
+    
+}
+.result .copy i{
+    font-size: 20px;
+}
+
+.settings{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.setting{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between !important;
+    margin: 13px 0;
+}
+.setting #length{
+    border-radius: 6px;
+    border: 2px solid#181830;
+    background-color: #9c9ce5;
+}
+.setting #length::placeholder{
+    color: rgb(87, 69, 134);
+    font-size: medium;
+}
+.settings label{
+    color: aliceblue;
+}
+
+input[type='checkbox']{
+    accent-color: red;
+    padding-left: 30px;
+    padding: 20px;
+}
+label{
+    font-size: 17px;
+    padding-right: 190px;
+    font-family: 'Muli', sans-serif;
+}
+.container .generate{
+    padding: 10px;
+    font-size: 20px;
+    color: aliceblue;
+    background-color: #3B3B98;
+    border: none;
+    cursor: pointer;
+}
+.container .generate:hover{
+    
+    background-color: #4c4ca3;
+  
+}
+
+
+
